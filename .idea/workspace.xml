@@ -18,8 +18,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_portfolio/static/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="115" column="24" lean-forward="false" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
+            <state relative-caret-position="258">
+              <caret line="113" column="16" lean-forward="false" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="welcome.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_portfolio/templates/welcome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="58" column="115" lean-forward="false" selection-start-line="58" selection-start-column="115" selection-end-line="58" selection-end-column="115" />
+            <state relative-caret-position="233">
+              <caret line="61" column="26" lean-forward="true" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -99,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_portfolio/templates/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+            <state relative-caret-position="288">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -833,26 +833,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/my_portfolio/templates/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/my_portfolio/static/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="115" column="24" lean-forward="false" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
+        <state relative-caret-position="258">
+          <caret line="113" column="16" lean-forward="false" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_portfolio/templates/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="58" column="115" lean-forward="false" selection-start-line="58" selection-start-column="115" selection-end-line="58" selection-end-column="115" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_portfolio/templates/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        <state relative-caret-position="233">
+          <caret line="61" column="26" lean-forward="true" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
           <folding />
         </state>
       </provider>
