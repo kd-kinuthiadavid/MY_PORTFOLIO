@@ -1,0 +1,11 @@
+mkdir <dir name>
+create virtual:
+	 python3.6 -m venv --without-pip virtual
+
+install pip from https://packaging.python.org/tutorials/installing-packages/:
+	wget https://bootstrap.pypa.io/get-pip.py
+now install django with pip, pip3, pip3.6 - to know which pip works;
+or just pip/3/3.6 -V = the one in virtual is the one that works.
+
+
+for portfolio am using pip3.

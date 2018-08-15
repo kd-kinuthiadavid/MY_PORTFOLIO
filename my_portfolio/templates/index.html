@@ -1,0 +1,31 @@
+{%extends 'base.html'%}
+{% load static %}
+{% block content %}
+{{ block.super}}
+    <div class="container-fluid">
+         <div class="row" id="my_projects">
+            <div class="col-md-1.5"></div>
+        {% for project in projects %}
+           <div class="col-md-3">
+                 <div class="card">
+                    <img class="img-responsive" src="{{project.title_image.url}}" alt="image">
+                    <div class="card-body">
+                        <small><strong>Title: </strong>{{ project.title }}</small>
+                        <br>
+                        <small class="card_text small-description"><strong>Description: </strong> {{project.description}}</small>
+                        <br>
+
+                        <a href="{{ project.github_link }}"><small class="card_text"><strong>Github Link:</strong>{{ project.title}}</small></a>
+                        <br>
+                        <a href="{{ project.live_link }}"><small class="card_text"><strong>Live Link:</strong>{{ project.title}}</small></a>
+
+
+                    </div>
+              </div>
+            </div>
+      {% endfor %}
+
+            <div class="col-md-1.5"></div>
+        </div>
+    </div>
+{% endblock %}
