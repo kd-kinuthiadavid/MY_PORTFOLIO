@@ -15,3 +15,7 @@ def about(request):
 def projects(request):
     projects = Project.objects.all()
     return render(request, 'welcome.html', locals())
+
+def universe(request):
+    title='welcome'
+    return render(request, 'universe.html', locals())

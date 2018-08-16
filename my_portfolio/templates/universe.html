@@ -1,0 +1,76 @@
+{% load bootstrap4 %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  {% if title %}
+  <title>KINUTHIA DAVID - {{title}}</title>
+  {% else %}
+    <title>KINUTHIA DAVID</title>
+  {% endif %}
+
+  {% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/universe.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+  {% endblock %}
+
+</head>
+    <body onload="start();">
+  <div class="stars-bg"></div>
+  <div class="wrapper">
+    <div class="gui">
+      <span class="close-gui" onclick="rev.closeGUI();">&#10006;</span>
+      <h1></h1>
+      <p></p>
+      <div class="ab-year"></div>
+    </div>
+    <div class="solar-system-info">
+      <p>One year is equal to <span class="ys"></span>.
+        You can change that time below in the input field.
+        You can click on the sun or on any orbit for additional information.
+      </p>
+      <label for="year-in-seconds">Change the year in seconds</label>
+      <input id="year-in-seconds" type="number" min="0" max="1000" value="15" oninput="rev.changeYS();">
+    </div>
+    <div class="orbit sun"></div>
+    <div class="orbit mercury-orbit">
+      <div class="planet mercury"></div>
+    </div>
+    <div class="orbit venus-orbit">
+      <div class="planet venus"></div>
+    </div>
+    <div class="orbit earth-orbit">
+      <div class="planet earth"></div>
+      <div class="orbit moon-orbit">
+        <div class="moon"></div>
+      </div>
+    </div>
+    <div class="orbit mars-orbit">
+      <div class="planet mars"></div>
+    </div>
+    <div class="orbit jupiter-orbit">
+      <div class="planet jupiter"></div>
+    </div>
+    <div class="orbit saturn-orbit">
+      <div class="planet saturn"></div>
+    </div>
+    <div class="orbit uranus-orbit">
+      <div class="planet uranus"></div>
+    </div>
+    <div class="orbit neptune-orbit">
+      <div class="planet neptune"></div>
+    </div>
+  </div>
+
+{% block scripts %}
+         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="{% static 'scripts/main.js' %}" charset="utf-8"></script>
+     {% bootstrap_javascript %}
+    {% endblock %}
+    </body>
+</html>

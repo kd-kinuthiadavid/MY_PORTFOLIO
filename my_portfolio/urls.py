@@ -8,6 +8,7 @@ urlpatterns=[
         url(r'^$', views.welcome, name='welcome'),
         url(r'^about/', views.about, name='about'),
         url(r'^projects/', views.projects, name='projects'),
+        url(r'^universe/', views.universe, name='universe'),
 
 ]
 if settings.DEBUG:
