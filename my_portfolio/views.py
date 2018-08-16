@@ -19,3 +19,7 @@ def projects(request):
 def universe(request):
     title='welcome'
     return render(request, 'universe.html', locals())
+
+def RealAbout(request):
+    title='welcome'
+    return render(request, 'index.html', locals())

@@ -2,8 +2,12 @@
 {% load static %}
 {% block content %}
 {{ block.super}}
+
+
     <div class="container-fluid">
         <div class="row" id="my_name_and_tag">
+            <div id="particles-js"></div>
+            <div class="count-particles"><span class="js-count-particles">--</span> particles </div>
             <div class="col-md-3"></div>
             <div class="col-md-3">
                 <div class="name">
@@ -70,4 +74,8 @@
 
         </div>
     </div>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function(){ console.log('particles.json loaded...');
+        )};
+    </script>
 {% endblock %}
