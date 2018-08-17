@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+{% load bootstrap4 %}
+{% load static %}
+{% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  {% endblock %}
+{% block content %}
+{{ block.super}}
+    <div class="container-fluid">
+        <div class="row contact_section">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="text-center big_text">
+                    <h2>OK, LET US CREATE</h2>
+                    <h2>SOMETHING GREAT.</h2>
+                </div>
+                <br>
+                <div class="text-center small_text">
+                    <small>if you like my work and have some cool projects to work on,</small>
+                    <br>
+                    <small>contact me through the following channels</small>
+                </div>
+                <br>
+                <br>
+                <div class="text-center email_button">
+                    <a href="mailto:kd.kinuthiadavid@mail.com"><button type="button" class="btn btn-outline-primary btn-lg">Email Me</button></a>
+                </div>
+            </div>
+            <div class="text-center social">
+                <a href="https://github.com/kd-kinuthiadavid"><h7 class="text-center">GITHUB   :   </h7></a>
+                <a href="https://twitter.com/kd_midik"><h7 class="text-center">TWITTER   :   </h7></a>
+                <a href="#"><h7 class="text-center">FACEBOOK   :   </h7></a>
+                <a href="https://www.pinterest.com/ipasslinesmidik/"><h7 class="text-center">PINTEREST   :   </h7></a>
+                <a href="https://codepen.io/kd-kinuthiadavid"><h7 class="text-center">CODEPEN</h7></a>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+{% endblock %}

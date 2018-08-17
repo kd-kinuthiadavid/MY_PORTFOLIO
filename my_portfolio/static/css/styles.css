@@ -91,7 +91,9 @@ a:hover{
     text-transform: uppercase;
 }
 .horizontal_one{
-    border-bottom:2px solid  #D4C8DF;
+    border-bottom:1px solid  #D4C8DF;
+      width: 200px;
+      margin-bottom:50px;
 }
 .aboutt{
     margin-top:150px;
@@ -124,4 +126,35 @@ a:hover{
 .skilss{
     margin-top: 30px;
     margin-bottom: 70px;
+}
+.small_one{
+    font-size:15px;
+    margin-bottom:10px;
+}
+.contact_section{
+    background-color: #11131c;
+    height: 700px;
+}
+.big_text{
+    margin-top: 150px;
+}
+.social{
+    margin-left: 480px;
+}
+.btn-lg{
+    border-color: white;
+    color: white;
+}
+.project_image{
+    float: left;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+.project_details{
+    float: right;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+.img-responsive{
+    box-shadow: 0 8px 8px 0 white;
 }

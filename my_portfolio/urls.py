@@ -9,6 +9,8 @@ urlpatterns=[
         url(r'^about/', views.about, name='about'),
         url(r'^projects/', views.projects, name='projects'),
         url(r'^universe/', views.universe, name='universe'),
+        url(r'^RealAbout/', views.RealAbout, name='RealAbout'),
+        url(r'^Contact/', views.Contact, name='Contact'),
 
 ]
 if settings.DEBUG:

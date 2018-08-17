@@ -21,58 +21,16 @@
                 <div class="tag">
                     <small class="text-center small_one">Not</small>
                     <br>
-                    <small class="text-center">Your Average</small>
                     <br>
-                    <small class="text-center">Fullstack Developer</small>
+                    <small class="text-center small_one">Your Average</small>
+                    <br>
+                    <br>
+                    <small class="text-center small_one">Fullstack  Developer</small>
                 </div>
             </div>
             <div class="col-md-3"></div>
         </div>
         <br>
-        <br>
-        <br>
-        <div class="row" id="my_about">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 aboutt">
-                <div class="about_name">
-                    <h2 class="about_name_text"> MUCHAI DAVID KINUTHIA </h2>
-                    <hr class="horizontal_one">
-                    <h4>About Me</h4>
-                </div>
-                <div class="about_content">
-                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex<br> ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
-                </div>
-            </div>
-            <div class="col-md-3"></div>
-
-        </div>
-        <div class="row" id="my_projects">
-            <div class="col-md-1.5"></div>
-        {% for project in projects %}
-           <div class="col-md-4">
-                 <div class="card">
-                    <img class="img-responsive" src="{{project.title_image.url}}" alt="image">
-                    <div class="card-body">
-                        <small><strong>Title: </strong><br>{{ project.title }}</small>
-                        <br>
-                        <small class="card_text small-description"><strong><small>Description:</small></strong><br>{{project.description}}</small>
-                        <br>
-
-                        <a href="{{ project.github_link }}"><small class="card_text"><strong><small>Github Link:</small></strong> <br>{{ project.title}}</small></a>
-                        <br>
-                        <a href="{{ project.live_link }}"><small class="card_text"><strong><small>Live Link:</small></strong> <br>{{ project.title}}</small></a>
-
-
-                    </div>
-              </div>
-            </div>
-      {% endfor %}
-
-            <div class="col-md-1.5"></div>
-        </div>
-        <div class="row" id="my_skills">
-
-        </div>
     </div>
     <script>
         particlesJS.load('particles-js', 'particles.json', function(){ console.log('particles.json loaded...');

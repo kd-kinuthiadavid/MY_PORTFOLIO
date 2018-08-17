@@ -1,7 +1,7 @@
 const rev = {
   year: 15, // one year in seconds
   days: 365.26,
-  ab: ["Python", "Django", "Bootstrap", "HTML", "CSS", "Flask", "Jupiter", "Saturn", "Uranus", "Neptune"],
+  ab: ["Python", "Django", "Bootstrap", "HTML", "CSS", "Flask", "Javascript", "Git", "PostgreSQL", "Angular"],
   abTime: [0, 0.24, 0.61, 1, 0.07, 1.88, 11.86, 29.46, 84.01, 164.79], // revolution in years
   info: [
     "Python is a programming language that let's you work more quickly, and, intergrate systems more efficiently.",
@@ -9,11 +9,11 @@ const rev = {
     "Bootstrap  the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.",
     "HTML is the standard markup language for creating web pages and web applications.",
     "CSS style sheet language used for describing the presentation of a document written in a markup language like HTML.",
-    "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System after Mercury.",
-    "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a giant planet with a mass one-thousandth that of the Sun, but two-and-a-half times that of all the other planets in the Solar System combined.",
-    "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius about nine times that of Earth.",
-    "Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.",
-    "Neptune is the eighth and farthest known planet from the Sun in the Solar System. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet."
+    "Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.",
+    "JavaScript, often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.",
+    "Git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people.",
+    "PostgreSQL, often simply Postgres, is an object-relational database management system with an emphasis on extensibility and standards compliance.",
+    "Angular is a TypeScript-based open-source front-end web application platform led by the Angular Team at Google and by a community of individuals and corporations.",
   ],
   selector: {
     orb: document.querySelectorAll(".orbit"),

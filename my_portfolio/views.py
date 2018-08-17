@@ -14,7 +14,7 @@ def about(request):
 
 def projects(request):
     projects = Project.objects.all()
-    return render(request, 'welcome.html', locals())
+    return render(request, 'portfolio.html', locals())
 
 def universe(request):
     title='welcome'
@@ -22,4 +22,8 @@ def universe(request):
 
 def RealAbout(request):
     title='welcome'
-    return render(request, 'index.html', locals())
+    return render(request, 'about.html', locals())
+
+def Contact(request):
+    title='welcome'
+    return render(request, 'contact.html', locals())

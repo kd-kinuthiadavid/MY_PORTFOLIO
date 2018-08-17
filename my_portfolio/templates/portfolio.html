@@ -1,0 +1,112 @@
+{%extends 'base.html'%}
+{% load static %}
+{% block content %}
+{{ block.super}}
+    <div class="container-fluid">
+       {% for project in projects %}
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 project_image">
+                            <div>
+                                <img class="img-responsive" src="{{project.title_image.url}}" alt="image" data-toggle="modal" data-target="#{{project.id}}">
+                            </div>
+                        </div>
+                        <div class="col-md-6 project_details">
+                            <div>
+                                <h2 class="project_title"><strong>{{ project.title }}</strong></h2>
+                                <br>
+                                <h5 class="project_desc">{{ project.description }}</h5>
+                                <br>
+                                <small class="project_link"><a href="{{ project.github_link }}">Github Link</a></small>
+                                <br>
+                                <small class="project_link"><a href="{{ project.live_link }}">Live Link</a></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            {% endfor %}
+
+             {% for project in projects %}
+
+  <!-- Modal -->
+  <div class="modal fade my_modal" id="{{project.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">{{ project.title }}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img id="modal_image"  class="img-responsive modal-image img-thumbnail" src="{{project.title_image.url}}" alt="image">
+            <br>
+            <br>
+          <h6>Technologies:</h6>
+          <br>
+          <h6><span class="modal-span">HTML and CSS</span></h6>
+          <br>
+          <h6><span class="modal-span">Python3.6</span></h6>
+          <br>
+          <h6><span class="modal-span">Django</span></h6>
+          <br>
+          <h6><span class="modal-span">Heroku</span></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+
+        </div>
+
+    </div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--<div class="row" id="my_projects">-->
+            <!--<div class="col-md-1.5"></div>-->
+        <!--{% for project in projects %}-->
+           <!--<div class="col-md-3">-->
+                 <!--<div class="card">-->
+                    <!--<img class="img-responsive" src="{{project.title_image.url}}" alt="image">-->
+                    <!--<div class="card-body">-->
+                        <!--<small><strong>Title: </strong>{{ project.title }}</small>-->
+                        <!--<br>-->
+                        <!--<small class="card_text small-description"><strong>Description: </strong> {{project.description}}</small>-->
+                        <!--<br>-->
+
+                        <!--<a href="{{ project.github_link }}"><small class="card_text"><strong>Github Link:</strong>{{ project.title}}</small></a>-->
+                        <!--<br>-->
+                        <!--<a href="{{ project.live_link }}"><small class="card_text"><strong>Live Link:</strong>{{ project.title}}</small></a>-->
+
+
+                    <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+      <!--{% endfor %}-->
+
+            <!--<div class="col-md-1.5"></div>-->
+        <!--</div>-->

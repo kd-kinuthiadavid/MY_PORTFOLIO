@@ -1,0 +1,36 @@
+{%extends 'base.html'%}
+{% load bootstrap4 %}
+{% load static %}
+{% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  {% endblock %}
+{% block content %}
+{{ block.super}}
+    <article class="flex-container">
+      <section class="flex" id="muchai">
+        <div>
+          <h4> MUCHAI </h4>
+            <br>
+          <h4> DAVID </h4>
+              <br>
+          <h4> KINUTHIA </h4>
+
+        </div>
+      </section>
+      <section class="flex" id="david">
+        <div>
+
+            <h4>About Me</h4>
+            <hr class="horizontal_one">
+          <h4>I am a full stack developer</h4>
+               <br>
+          <h4>With expertise in front end design, back end logic and database architecture </h4>
+               <br>
+          <h4>I like stars and other dimensional spaces too.</h4>
+        </div>
+      </section>
+    </article>
+{% endblock %}
