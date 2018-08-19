@@ -1,14 +1,13 @@
 const rev = {
   year: 15, // one year in seconds
   days: 365.26,
-  ab: ["Python", "Django", "Bootstrap", "HTML", "CSS", "Flask", "Javascript", "Git", "PostgreSQL", "Angular"],
+  ab: ["Python", "Django", "Bootstrap", "HTML", "Flask", "Javascript", "Git", "PostgreSQL", "Angular"],
   abTime: [0, 0.24, 0.61, 1, 0.07, 1.88, 11.86, 29.46, 84.01, 164.79], // revolution in years
   info: [
     "Python is a programming language that let's you work more quickly, and, intergrate systems more efficiently.",
     "Django makes it easier to build better apps more quickly with lesser code.",
     "Bootstrap  the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.",
     "HTML is the standard markup language for creating web pages and web applications.",
-    "CSS style sheet language used for describing the presentation of a document written in a markup language like HTML.",
     "Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.",
     "JavaScript, often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.",
     "Git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people.",

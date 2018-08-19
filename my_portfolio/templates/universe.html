@@ -13,14 +13,23 @@
 
   {% block styles %}
     {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" href="{% static 'css/universe.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
   {% endblock %}
 
 </head>
 
     <body onload="start();">
+
+       {% include "navbar.html" %}
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+
   <div class="stars-bg"></div>
   <div class="wrapper">
     <div class="gui">
@@ -37,35 +46,53 @@
       <label for="year-in-seconds">Change the year in seconds</label>
       <input id="year-in-seconds" type="number" min="0" max="1000" value="15" oninput="rev.changeYS();">
     </div>
-    <div class="orbit sun"></div>
+    <div class="orbit"><i class="devicon-python-plain-wordmark colored"></i></div>
+    <!--<i class="devicon-python-plain-wordmark colored orbit sun"></i>-->
+
     <div class="orbit mercury-orbit">
-      <div class="planet mercury"></div>
+      <div class="planet mercury"><i class="devicon-django-line"></i>
+      </div>
     </div>
     <div class="orbit venus-orbit">
-      <div class="planet venus"></div>
+      <div class="planet venus"><i class="devicon-bootstrap-plain-wordmark"></i>
+      </div>
     </div>
     <div class="orbit earth-orbit">
-      <div class="planet earth"></div>
+      <div class="planet earth"><i class="devicon-html5-plain-wordmark colored"></i>
+      </div>
       <div class="orbit moon-orbit">
         <div class="moon"></div>
       </div>
     </div>
     <div class="orbit mars-orbit">
-      <div class="planet mars"></div>
+      <div>
+        <img class="planet mars mymars" src="{% static 'icons/flask.jpg' %}">
+      </div>
     </div>
     <div class="orbit jupiter-orbit">
-      <div class="planet jupiter"></div>
+      <div class="planet jupiter">
+        <i class="devicon-javascript-plain colored"></i>
+      </div>
     </div>
     <div class="orbit saturn-orbit">
-      <div class="planet saturn"></div>
+      <div class="planet saturn"><i class="devicon-git-plain colored"></i>
+</div>
     </div>
     <div class="orbit uranus-orbit">
-      <div class="planet uranus"></div>
+      <div class="planet uranus">
+          <i class="devicon-postgresql-plain-wordmark"></i>
+      </div>
     </div>
     <div class="orbit neptune-orbit">
-      <div class="planet neptune"></div>
+      <div class="planet neptune">
+        <i class="devicon-angularjs-plain colored"></i>
+      </div>
     </div>
   </div>
+        </div>
+      </div>
+    </div>
+
 
 {% block scripts %}
          <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
