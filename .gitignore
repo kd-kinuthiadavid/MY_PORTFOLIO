@@ -1,0 +1,7 @@
+/virtual
+virtual/
+*.pyc
+env
+.env
+/.env
+.env/
